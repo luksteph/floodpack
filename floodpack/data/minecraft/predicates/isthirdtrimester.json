@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "fakePlayer"
+      },
+      "score": "timeDummy",
+      "scale": 1
+    },
+    "range": {
+      "min": 4000,
+      "max": 5470
+    }
+  }
+  

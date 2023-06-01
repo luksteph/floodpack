@@ -4,21 +4,15 @@ scoreboard players add fakePlayer timeDummy 1
 # Flood the world
 scoreboard players operation waterlvstore timeDummy = fakePlayer timeDummy
 
-# time below 2400 sec
-execute if score fakePlayer timeDummy matches 0..2400 run scoreboard players operation waterlvstore timeDummy -= const1200 timeDummy
-execute if score fakePlayer timeDummy matches 0..2400 run scoreboard players operation waterlvstore timeDummy *= waterlvstore timeDummy
-execute if score fakePlayer timeDummy matches 0..2400 run scoreboard players operation waterlvstore timeDummy %= const22500 timeDummy
+#LINEAR WATER RISE TEST
+scoreboard players operation waterlvstore timeDummy %= const30 timeDummy
 
-# time between 2400 and 4000 sec
-execute if score fakePlayer timeDummy matches 2400..4000 run scoreboard players operation waterlvstore timeDummy %= const10 timeDummy
+# Function-based water rise
+#execute if predicate isfirsttrimester run function timebased/firsttrimester
+#execute if predicate issecondtrimester run function timebased/secondtrimester
+#execute if predicate isthirdtrimester run function timebased/thirdtrimester
 
-# time between 4000 sec and 5470 sec
-execute if score fakePlayer timeDummy matches 4000..5470 run scoreboard players operation waterlvstore timeDummy -= const5470 timeDummy
-execute if score fakePlayer timeDummy matches 4000..5470 run scoreboard players operation waterlvstore timeDummy *= waterlvstore timeDummy
-execute if score fakePlayer timeDummy matches 4000..5470 run scoreboard players operation waterlvstore timeDummy %= constn22500 timeDummy
-execute if score fakePlayer timeDummy matches 4000..5470 run scoreboard players operation waterlvstore timeDummy += const320 timeDummy
-
-# what the fuck?
+# yeah
 execute if score waterlvstore timeDummy matches 0 run function flood
 
 # Spawn entities (10% chance, runs at 30sec intervals)
