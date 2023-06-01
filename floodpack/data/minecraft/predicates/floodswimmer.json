@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "fakePlayer"
+      },
+      "score": "yLevel",
+      "scale": 1
+    },
+    "range": {
+      "min": -64,
+      "max": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "yPos",
+        "scale": 1
+      }
+    }
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "location": {
+        "fluid": {
+          "fluid": "minecraft:water"
+        }
+      },
+      "flags": {
+        "is_swimming": true
+      }
+    }
+  }
+]
