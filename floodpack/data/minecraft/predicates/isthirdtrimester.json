@@ -4,9 +4,9 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "fakePlayer"
+        "name": "playTimeSec"
       },
-      "score": "timeDummy",
+      "score": "dummy",
       "scale": 1
     },
     "range": {

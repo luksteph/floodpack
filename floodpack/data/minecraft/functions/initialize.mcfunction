@@ -5,22 +5,24 @@ worldborder center 0 0
 worldborder set 128
 weather clear
 defaultgamemode survival
+setworldspawn 0 120 0
 
 # Create objectives
-scoreboard objectives add timeDummy dummy
+scoreboard objectives add dummy dummy
 scoreboard objectives add yLevel dummy
 
 # Enum constants
-scoreboard players set const10 timeDummy 10
-scoreboard players set const30 timeDummy 30
-scoreboard players set const320 timeDummy 320
-scoreboard players set const1200 timeDummy 1200
-scoreboard players set const5470 timeDummy 5470
-scoreboard players set const22500 timeDummy 22500
-scoreboard players set constn22500 timeDummy -22500
+scoreboard players set const10 dummy 10
+scoreboard players set const30 dummy 30
+scoreboard players set const320 dummy 320
+scoreboard players set const1200 dummy 1200
+scoreboard players set const5470 dummy 5470
+scoreboard players set const22500 dummy 22500
+scoreboard players set constn22500 dummy -22500
 
 # Create center entity
-summon marker 0 -64 0 {Tags:[waterLevel]}
+summon marker 0 64 0 {Tags:[waterLevel]}
+scoreboard players set waterLevel yLevel 64
 
 # Run main function
 function main

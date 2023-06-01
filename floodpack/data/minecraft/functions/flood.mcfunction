@@ -1,8 +1,8 @@
 # called by main
-scoreboard players add fakePlayer yLevel 1
-teleport @e[tag=waterLevel] ~ ~1 ~
-#title @a title [{"text":"Water is rising!","color":"dark_red","bold":true}]
-playsound block.bell.resonate master @a
+# Helper functions (keep track of water level, move Marker)
+scoreboard players add waterLevel yLevel 1
+execute as @e[tag=waterLevel] at @s run tp @s ~ ~1 ~
 
-# fill worldborder with water
+# Raise water level and ring a bell
 execute as @e[tag=waterLevel] at @s run fill ~64 ~ ~64 ~-64 ~ ~-64 water keep
+playsound block.bell.resonate master @a

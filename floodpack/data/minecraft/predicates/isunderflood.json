@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "yLevel"
+  },
+  "range": {
+    "min": -64,
+    "max": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "waterLevel"
+      },
+      "score": "yLevel"
+    }
+  }
+}
