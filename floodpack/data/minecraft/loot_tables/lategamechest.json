@@ -1,0 +1,178 @@
+{
+    "pools": [
+      {
+        "rolls": 7,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diorite",
+      "weight": 5,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 20,
+                  "max": 32
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:glass",
+      "weight": 5,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 20,
+                  "max": 32
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bread",
+      "weight": 4,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 7
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_beef",
+      "weight": 3,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot",
+      "weight": 6,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 10
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:string",
+      "weight": 5,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 15
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gunpowder",
+      "weight": 4,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 12
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+      "weight": 2,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 5
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+      "weight": 2,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 5
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sponge",
+      "weight": 2,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+      "weight": 3,
+            "functions": [
+   {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 10
+                }}
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+      "weight": 1
+          },
+   {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_apple",
+      "weight": 2
+          },
+   {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+      "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:apple",
+      "weight": 1,
+            "functions": [
+   {
+                "function": "minecraft:set_name",
+                "name": {"text": "Apple of Gold", "italic": false}
+  }
+            ]
+          }
+        ]
+      }
+    ]
+  }

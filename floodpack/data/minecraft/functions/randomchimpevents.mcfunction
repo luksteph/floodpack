@@ -1,8 +1,9 @@
 # Top layer of water turns to ice
 execute as @e[tag=waterLevel] at @s if predicate icechance run fill ~64 ~ ~64 ~-64 ~ ~-64 ice replace water
 
-# Chest spawn
-execute as @e[tag=waterLevel] at @s if predicate chestchance run setblock ~ ~ ~ minecraft:chest{LootTable:"dungus"} replace
+# Chest spawns
+execute as @e[tag=waterLevel] at @s if predicate chestchance unless predicate isthirdtrimester run setblock ~ ~60 ~ minecraft:chest{LootTable:"midgamechest"} replace
+execute as @e[tag=waterLevel] at @s if predicate chestchance if predicate isthirdtrimester run setblock ~ ~10 ~ minecraft:chest{LootTable:"lategamechest"} replace
 
 # Random entity spawns
 execute as @e[tag=waterLevel] at @s if predicate guardianchance run summon guardian ~ ~ ~

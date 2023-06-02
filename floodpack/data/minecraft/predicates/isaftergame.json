@@ -6,12 +6,10 @@
         "type": "minecraft:fixed",
         "name": "playTimeSec"
       },
-      "score": "dummy",
-      "scale": 1
+      "score": "dummy"
     },
     "range": {
-      "min": 0,
-      "max": 1280
+      "min": 7200
     }
   }
   

@@ -5,4 +5,4 @@ execute as @e[tag=waterLevel] at @s run tp @s ~ ~1 ~
 
 # Raise water level and ring a bell
 execute as @e[tag=waterLevel] at @s run fill ~64 ~ ~64 ~-64 ~ ~-64 water keep
-playsound block.bell.resonate master @a
+execute as @a at @s run playsound block.bell.resonate ambient @s ~ ~ ~

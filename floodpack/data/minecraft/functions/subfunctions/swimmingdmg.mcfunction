@@ -3,11 +3,10 @@
 effect give @s slowness 2 0 true
 execute as @s run say Hello, I am under the water, please help me!
 
-
 # Depth-based damage
-execute as @s if predicate damagedepth1 run damage @s 6
-execute as @s if predicate damagedepth2 run damage @s 5
-execute as @s if predicate damagedepth3 run damage @s 4
-execute as @s if predicate damagedepth4 run damage @s 3
-execute as @s if predicate damagedepth5 run damage @s 2
-execute as @s if predicate damagedepth6 run damage @s 1
+execute as @s at @s if predicate damagedepth1 run damage @s 6
+execute as @s at @s if predicate damagedepth2 run damage @s 5
+execute as @s at @s if predicate damagedepth3 run damage @s 4
+execute as @s at @s if predicate damagedepth4 run damage @s 3
+execute as @s at @s if predicate damagedepth5 run damage @s 2
+execute as @s at @s if predicate damagedepth6 run damage @s 1

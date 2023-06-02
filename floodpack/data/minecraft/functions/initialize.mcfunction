@@ -10,15 +10,12 @@ setworldspawn 0 120 0
 # Create objectives
 scoreboard objectives add dummy dummy
 scoreboard objectives add yLevel dummy
+scoreboard objectives add deaths deathCount
 
 # Enum constants
-scoreboard players set const10 dummy 10
-scoreboard players set const30 dummy 30
-scoreboard players set const320 dummy 320
-scoreboard players set const1200 dummy 1200
-scoreboard players set const5470 dummy 5470
-scoreboard players set const22500 dummy 22500
-scoreboard players set constn22500 dummy -22500
+scoreboard players set const5 dummy 5
+scoreboard players set const20 dummy 20
+scoreboard players set const35 dummy 35
 
 # Create center entity
 summon marker 0 64 0 {Tags:[waterLevel]}
