@@ -24,6 +24,11 @@ scoreboard players set constn22500 dummy -22500
 summon marker 0 64 0 {Tags:[waterLevel]}
 scoreboard players set waterLevel yLevel 64
 
+#secondary fill ent temp
+summon marker 0 -64 0 {Tags:[initialFill]}
+scoreboard players set initialFill yLevel -64
+function subfunctions/initialfill
+
 # Run main function
 function main
 

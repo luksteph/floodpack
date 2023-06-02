@@ -1,0 +1,22 @@
+[{
+    "condition": "minecraft:random_chance",
+    "chance": 0.0002
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "playTimeSec"
+      },
+      "score": "dummy",
+      "scale": 1
+    },
+    "range": {
+      "min": 4000,
+      "max": 5470
+    }
+  }
+]
+  

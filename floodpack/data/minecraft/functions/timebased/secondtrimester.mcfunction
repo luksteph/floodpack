@@ -1,2 +1,2 @@
 # Change Water Level
-scoreboard players operation waterlvstore dummy %= const10 dummy
+scoreboard players operation waterLevelTimer dummy %= const10 dummy
