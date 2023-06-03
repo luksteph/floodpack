@@ -2,8 +2,8 @@
 execute as @e[tag=waterLevel] at @s if predicate icechance run fill ~64 ~ ~64 ~-64 ~ ~-64 ice replace water
 
 # Chest spawns
-execute as @e[tag=waterLevel] at @s if predicate chestchance unless predicate isthirdtrimester run setblock ~ ~60 ~ minecraft:chest{LootTable:"midgamechest"} replace
-execute as @e[tag=waterLevel] at @s if predicate chestchance if predicate isthirdtrimester run setblock ~ ~10 ~ minecraft:chest{LootTable:"lategamechest"} replace
+execute as @e[tag=waterLevel] at @s if predicate chestchance unless predicate isthirdtrimester run function subfunctions/midgamechest
+execute as @e[tag=waterLevel] at @s if predicate chestchance2 if predicate isthirdtrimester run function subfunctions/lategamechest
 
 # Random entity spawns
 execute as @e[tag=waterLevel] at @s if predicate guardianchance run summon guardian ~ ~ ~

@@ -1,7 +1,6 @@
 # What happens if a player is determined to be under the floodwaters (checked in main)
 # happens once every second
 effect give @s slowness 2 0 true
-execute as @s run say Hello, I am under the water, please help me!
 
 # Depth-based damage
 execute as @s at @s if predicate damagedepth1 run damage @s 6
