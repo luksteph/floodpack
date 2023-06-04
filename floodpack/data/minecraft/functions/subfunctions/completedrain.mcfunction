@@ -1,2 +1,2 @@
 function drain
-schedule function subfunctions/completedrain 10t
+execute if predicate waterlvabove0 run schedule function subfunctions/completedrain 10t

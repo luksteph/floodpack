@@ -1,5 +1,4 @@
 # What happens if a player is determined to be under the floodwaters (checked in main)
-# happens once every second
 effect give @s slowness 2 0 true
 
 # Depth-based damage
