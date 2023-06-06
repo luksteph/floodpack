@@ -12,6 +12,7 @@ setworldspawn 0 120 0
 scoreboard objectives add dummy dummy
 scoreboard objectives add yLevel dummy
 scoreboard objectives add deaths deathCount
+scoreboard objectives setdisplay sidebar yLevel
 
 # Enum constants
 scoreboard players set const5 dummy 5

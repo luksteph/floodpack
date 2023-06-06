@@ -12,6 +12,10 @@ execute if predicate isthirdtrimester run function waterlvcalc/thirdtrimester
 execute unless predicate isreceding if score waterLevelTimer dummy matches 0 run schedule function flood 5t
 execute if predicate isreceding if score waterLevelTimer dummy matches 0 run schedule function drain 5t
 
+execute if score playTimeSec dummy matches 1 run function subfunctions/timetransitions
+execute if score playTimeSec dummy matches 321 run function subfunctions/timetransitions
+execute if score playTimeSec dummy matches 2561 run function subfunctions/timetransitions
+execute if score playTimeSec dummy matches 5921 run function subfunctions/timetransitions
 
 # Damage players who are in the water
 execute as @a at @s if predicate isunderflood run function subfunctions/swimmingdmg
