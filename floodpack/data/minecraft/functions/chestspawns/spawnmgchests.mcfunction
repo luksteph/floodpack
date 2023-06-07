@@ -1,15 +1,15 @@
 # Summon 5 chest candidate location markers
-execute as @e[tag=waterLevel] at @s run summon marker ~ ~ ~ {"Tags":[chestCandidate]}
-execute as @e[tag=waterLevel] at @s run summon marker ~ ~ ~ {"Tags":[chestCandidate]}
-execute as @e[tag=waterLevel] at @s run summon marker ~ ~ ~ {"Tags":[chestCandidate]}
-execute as @e[tag=waterLevel] at @s run summon marker ~ ~ ~ {"Tags":[chestCandidate]}
-execute as @e[tag=waterLevel] at @s run summon marker ~ ~ ~ {"Tags":[chestCandidate]}
+summon marker ~ ~ ~ {"Tags":[chestCandidate]}
+summon marker ~ ~ ~ {"Tags":[chestCandidate]}
+summon marker ~ ~ ~ {"Tags":[chestCandidate]}
+summon marker ~ ~ ~ {"Tags":[chestCandidate]}
+summon marker ~ ~ ~ {"Tags":[chestCandidate]}
 
 # Spread out the location markers centered at 0,0; minimum distance of 128 apart; 100 block radius; under ylv 288; not respecting teams; all entities with chestcandidate tag
 spreadplayers ~ ~ 128 100 under 288 false @e[tag=chestCandidate]
 
 # Pick 3 random chest candidates to spawn a chest on
-execute as @e[tag=chestCandidate,limit=3,sort=random] run function chestspawns/midgamechest
+execute as @e[tag=chestCandidate,limit=3,sort=random] at @s run function chestspawns/midgamechest
 
 # Remove the non-selected candidates
 execute as @e[tag=chestCandidate] at @s unless block ~ ~ ~ chest run kill @s
